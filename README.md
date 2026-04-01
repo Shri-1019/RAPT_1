@@ -90,7 +90,11 @@ git clone https://github.com/Shri-1019/RAPT_1.git
 cd RAPT_1
 
 
-### Structure
+## 📁 Project Structure
+
+<details>
+<summary><b>Click to expand folder structure</b></summary>
+
 RAPT_1/
 ├── frontend/                    # Angular application
 │   ├── src/
@@ -130,6 +134,8 @@ RAPT_1/
 │   └── .gitignore
 ├── .gitignore
 └── README.md
+
+</details>
 
 
 

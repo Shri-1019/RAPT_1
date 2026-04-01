@@ -92,34 +92,32 @@ cd RAPT_1
 
 ## 📁 Project Structure
 
-<details>
-<summary><b>Click to expand folder structure</b></summary>
-
+```text
 RAPT_1/
-├── frontend/                    # Angular application
+├── frontend/
 │   ├── src/
 │   │   ├── app/
-│   │   │   ├── core/           # Services, guards, interceptors
-│   │   │   │   ├── services/   # API services (auth, payment, etc.)
-│   │   │   │   ├── guards/     # Route guards (auth, role)
-│   │   │   │   └── interceptors/ # HTTP interceptors (auth token)
-│   │   │   ├── shared/         # Reusable components
-│   │   │   │   ├── components/ # Button, card, modal, etc.
-│   │   │   │   ├── layouts/    # Header, sidebar layouts
-│   │   │   │   └── pipes/      # Custom pipes
-│   │   │   ├── pages/          # 📍 YOUR WORK GOES HERE
-│   │   │   │   ├── home/       # Public pages (Ashen)
+│   │   │   ├── core/
+│   │   │   │   ├── services/
+│   │   │   │   ├── guards/
+│   │   │   │   └── interceptors/
+│   │   │   ├── shared/
+│   │   │   │   ├── components/
+│   │   │   │   ├── layouts/
+│   │   │   │   └── pipes/
+│   │   │   ├── pages/
+│   │   │   │   ├── home/
 │   │   │   │   │   ├── landing/
 │   │   │   │   │   ├── login/
 │   │   │   │   │   └── signup/
-│   │   │   │   ├── landlord/   # Landlord pages (Shaggy, Thisa, Abi)
+│   │   │   │   ├── landlord/
 │   │   │   │   │   ├── dashboard/
 │   │   │   │   │   ├── properties/
 │   │   │   │   │   ├── tenants/
 │   │   │   │   │   ├── leases/
 │   │   │   │   │   ├── payments/
 │   │   │   │   │   └── reports/
-│   │   │   │   └── tenant/     # Tenant pages (Thisa, Abi)
+│   │   │   │   └── tenant/
 │   │   │   │       ├── dashboard/
 │   │   │   │       ├── my-property/
 │   │   │   │       ├── my-lease/
@@ -134,8 +132,6 @@ RAPT_1/
 │   └── .gitignore
 ├── .gitignore
 └── README.md
-
-</details>
 
 
 
@@ -156,6 +152,9 @@ git merge main
 git add .
 git commit -m "feat: what you did today"
 git push origin your-name/feature-name
+
+
+
 
 ### Creating a New Feature Branch
 # Create branch from main

@@ -25,6 +25,7 @@ yarn-error.log*
 
 # Angular CLI analytics
 .angular-analytics.json
+.angular/
 
 # Angular service worker
 ngsw.json
@@ -50,10 +51,9 @@ out/
 !.vscode/extensions.json
 !.vscode/mcp.json
 .vscode-test/
-.history/*
+.history/
 
 # Miscellaneous
-/.angular/cache
 .sass-cache/
 /connect.lock
 /coverage
@@ -103,3 +103,21 @@ media/
 *.backup
 *.old
 *.orig
+
+# Debug logs
+*.log
+
+# Test coverage
+/coverage
+
+# Angular cache
+/.angular
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

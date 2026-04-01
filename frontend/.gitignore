@@ -1,0 +1,123 @@
+# See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
+
+# Compiled output
+/dist
+/tmp
+/out-tsc
+/bazel-out
+/dist-ssr
+
+# Node
+/node_modules
+jspm_packages/
+npm-debug.log
+yarn-error.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files
+.env
+.env.local
+.env.*.local
+.env.production
+.env.development
+
+# Angular CLI analytics
+.angular-analytics.json
+.angular/
+
+# Angular service worker
+ngsw.json
+
+# IDEs and editors
+.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+*.iml
+*.ipr
+*.iws
+out/
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/mcp.json
+.vscode-test/
+.history/
+
+# Miscellaneous
+.sass-cache/
+/connect.lock
+/coverage
+/libpeerconnection.log
+testem.log
+/typings
+__screenshots__/
+.eslintcache
+.npm
+.node_repl_history
+
+# System files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.tmp
+*.temp
+
+# Secrets and keys
+*.pem
+*.key
+*.crt
+*.p12
+secrets.yml
+secrets.properties
+
+# Uploads and user-generated content
+uploads/
+files/
+attachments/
+media/
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+*.h2.db
+
+# Backup files
+*.bak
+*.backup
+*.old
+*.orig
+
+# Debug logs
+*.log
+
+# Test coverage
+/coverage
+
+# Angular cache
+/.angular
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

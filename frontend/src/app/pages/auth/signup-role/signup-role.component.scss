@@ -1,0 +1,215 @@
+.signup-role-container {
+  min-height: 100vh;
+  background: #f4fafd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.role-card {
+  max-width: 1024px;
+  width: 100%;
+  background: transparent;
+}
+
+.logo-section {
+  text-align: center;
+  margin-bottom: 3rem;
+  
+  .logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+    
+    .logo-icon {
+      width: 56px;
+      height: 56px;
+      background: linear-gradient(135deg, #FF4E50 0%, #FF8C00 100%);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;
+      font-size: 28px;
+      color: white;
+    }
+    
+    .logo-text {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;
+      font-size: 42px;
+      color: #161d1f;
+      letter-spacing: -2.1px;
+    }
+  }
+  
+  .title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 42px;
+    color: #161d1f;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.75rem;
+  }
+  
+  .subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    color: #5b403e;
+  }
+}
+
+.role-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.role-option {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 2px solid #e2e9ec;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
+  }
+  
+  .role-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s;
+  }
+  
+  &:hover .role-icon {
+    transform: scale(1.1);
+  }
+  
+  &.landlord .role-icon {
+    background: linear-gradient(135deg, #FF4E50 0%, #FF8C00 100%);
+  }
+  
+  &.tenant .role-icon {
+    background: #10B981;
+  }
+  
+  h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    color: #161d1f;
+    margin-bottom: 0.75rem;
+  }
+  
+  .description {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #5b403e;
+    margin-bottom: 1.5rem;
+  }
+  
+  .feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem 0;
+    space-y: 0.75rem;
+    
+    li {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 0.75rem;
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      color: #161d1f;
+      
+      .check {
+        width: 18px;
+        height: 18px;
+        border-radius: 4px;
+        background: #D1FAE5;
+        position: relative;
+        
+        &::after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          background: #10B981;
+        }
+      }
+    }
+  }
+  
+  .get-started {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #FF4E50;
+    transition: gap 0.3s;
+    
+    svg {
+      transition: transform 0.3s;
+    }
+  }
+  
+  &:hover .get-started {
+    gap: 1rem;
+    
+    svg {
+      transform: translateX(4px);
+    }
+  }
+}
+
+.signin-link {
+  text-align: center;
+  
+  span {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #5b403e;
+  }
+  
+  a {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #FF4E50;
+    text-decoration: none;
+    margin-left: 0.5rem;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .role-options {
+    grid-template-columns: 1fr;
+  }
+  
+  .title {
+    font-size: 32px !important;
+  }
+}

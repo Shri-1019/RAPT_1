@@ -14,19 +14,19 @@ export const routes: Routes = [
     children: [
       {
         path: 'login',
-        loadComponent: () => import('./pages/home/login/login.component').then(m => m.LoginComponent)
+        loadComponent: () => import('./pages/auth/login/login.component').then(m => m.LoginComponent)
       },
       {
         path: 'signup',
-        loadComponent: () => import('./pages/home/signup/signup-role/signup-role').then(m => m.SignupRole)
+        loadComponent: () => import('./pages/auth/signup-role/signup-role.component').then(m => m.SignupRoleComponent)
       },
       {
         path: 'signup/landlord',
-        loadComponent: () => import('./pages/home/signup/signup-landlord/signup-landlord').then(m => m.SignupLandlord)
+        loadComponent: () => import('./pages/auth/signup-landlord/signup-landlord').then(m => m.SignupLandlord)
       },
       {
         path: 'signup/tenant',
-        loadComponent: () => import('./pages/home/signup/signup-tenant/signup-tenant').then(m => m.SignupTenant)
+        loadComponent: () => import('./pages/auth/signup-tenant/signup-tenant').then(m => m.SignupTenant)
       }
     ]
   },

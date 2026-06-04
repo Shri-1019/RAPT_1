@@ -1,0 +1,96 @@
+<div class="signup-role-container">
+  <div class="role-card">
+    <!-- Logo -->
+    <div class="logo-section">
+      <div class="logo">
+        <div class="logo-icon">R</div>
+        <span class="logo-text">RAPT</span>
+      </div>
+      <h1 class="title">Join RAPT</h1>
+      <p class="subtitle">Choose your role to get started</p>
+    </div>
+    
+    <!-- Role Options -->
+    <div class="role-options">
+      <!-- Landlord Card -->
+      <div class="role-option landlord" (click)="onSelectLandlord()">
+        <div class="role-icon landlord-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+            <polyline points="9 22 9 12 15 12 15 22"/>
+          </svg>
+        </div>
+        <h2>I'm a Landlord</h2>
+        <p class="description">Manage properties, tenants, leases, and financials all in one place</p>
+        <ul class="feature-list">
+          <li>
+            <span class="check"></span>
+            <span>Property management dashboard</span>
+          </li>
+          <li>
+            <span class="check"></span>
+            <span>Tenant screening & onboarding</span>
+          </li>
+          <li>
+            <span class="check"></span>
+            <span>Automated rent collection</span>
+          </li>
+          <li>
+            <span class="check"></span>
+            <span>Financial reports & analytics</span>
+          </li>
+        </ul>
+        <div class="get-started">
+          <span>Get Started</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="5" y1="12" x2="19" y2="12"/>
+            <polyline points="12 5 19 12 12 19"/>
+          </svg>
+        </div>
+      </div>
+      
+      <!-- Tenant Card -->
+      <div class="role-option tenant" (click)="onSelectTenant()">
+        <div class="role-icon tenant-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+            <path d="M3 12h18M12 3v18"/>
+            <rect x="4" y="4" width="16" height="16" rx="2"/>
+          </svg>
+        </div>
+        <h2>I'm a Tenant</h2>
+        <p class="description">Find your perfect home and manage your rental experience seamlessly</p>
+        <ul class="feature-list">
+          <li>
+            <span class="check"></span>
+            <span>Search available properties</span>
+          </li>
+          <li>
+            <span class="check"></span>
+            <span>Pay rent online securely</span>
+          </li>
+          <li>
+            <span class="check"></span>
+            <span>Submit maintenance requests</span>
+          </li>
+          <li>
+            <span class="check"></span>
+            <span>Access lease documents 24/7</span>
+          </li>
+        </ul>
+        <div class="get-started">
+          <span>Get Started</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="5" y1="12" x2="19" y2="12"/>
+            <polyline points="12 5 19 12 12 19"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Sign In Link -->
+    <div class="signin-link">
+      <span>Already have an account?</span>
+      <a routerLink="/auth/login">Sign In</a>
+    </div>
+  </div>
+</div>

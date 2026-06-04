@@ -7,14 +7,14 @@ export const routes: Routes = [
   // Public routes (no authentication required)
   {
     path: 'home',
-    loadComponent: () => import('./pages/home/landing/landing').then(m => m.Landing)
+    loadComponent: () => import('./pages/home/landing/landing.component').then(m => m.LandingComponent)
   },
   {
     path: 'auth',
     children: [
       {
         path: 'login',
-        loadComponent: () => import('./pages/home/login/login').then(m => m.Login)
+        loadComponent: () => import('./pages/home/login/login.component').then(m => m.LoginComponent)
       },
       {
         path: 'signup',

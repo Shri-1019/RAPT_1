@@ -22,7 +22,7 @@ export const routes: Routes = [
       },
       {
         path: 'signup/landlord',
-        loadComponent: () => import('./pages/auth/signup-landlord/signup-landlord').then(m => m.SignupLandlord)
+        loadComponent: () => import('./pages/auth/signup-landlord/signup-landlord.component').then(m => m.SignupLandlordComponent)
       },
       {
         path: 'signup/tenant',

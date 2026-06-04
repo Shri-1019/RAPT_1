@@ -7,7 +7,7 @@ export const routes: Routes = [
   // Public routes (no authentication required)
   {
     path: 'home',
-    loadComponent: () => import('./pages/home/landing/landing').then(m => m.Landing)
+    loadComponent: () => import('./pages/home/landing/landing.component').then(m => m.Landing)
   },
   {
     path: 'auth',

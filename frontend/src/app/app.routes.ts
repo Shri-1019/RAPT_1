@@ -26,7 +26,7 @@ export const routes: Routes = [
       },
       {
         path: 'signup/tenant',
-        loadComponent: () => import('./pages/auth/signup-tenant/signup-tenant').then(m => m.SignupTenant)
+        loadComponent: () => import('./pages/auth/signup-tenant/signup-tenant.component').then(m => m.SignupTenantComponent)
       }
     ]
   },

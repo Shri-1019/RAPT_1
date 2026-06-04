@@ -1,0 +1,214 @@
+.signup-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+// Left Side - Form
+.form-side {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: #f4fafd;
+  
+  .form-wrapper {
+    max-width: 480px;
+    width: 100%;
+  }
+  
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #5b403e;
+    text-decoration: none;
+    margin-bottom: 2rem;
+    transition: gap 0.3s;
+    
+    &:hover {
+      gap: 0.75rem;
+    }
+  }
+  
+  .form-header {
+    margin-bottom: 2rem;
+    
+    .header-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 0.75rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1rem;
+      
+      &.tenant-icon {
+        background: #10B981;
+      }
+    }
+    
+    h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 36px;
+      color: #161d1f;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.5rem;
+    }
+    
+    p {
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      color: #5b403e;
+    }
+  }
+  
+  form {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 2px solid #e2e9ec;
+    margin-bottom: 1.5rem;
+    
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-bottom: 0;
+    }
+    
+    .form-group {
+      margin-bottom: 1rem;
+      
+      label {
+        display: block;
+        font-family: 'Inter', sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        color: #161d1f;
+        margin-bottom: 0.5rem;
+      }
+      
+      input {
+        width: 100%;
+        padding: 0.75rem 1rem;
+        border: 2px solid #e2e9ec;
+        border-radius: 0.75rem;
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        transition: border-color 0.2s;
+        
+        &:focus {
+          outline: none;
+          border-color: #10B981;
+        }
+        
+        &::placeholder {
+          color: #9ca3af;
+        }
+      }
+    }
+  }
+  
+  .signin-prompt {
+    text-align: center;
+    
+    span {
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      color: #5b403e;
+    }
+    
+    a {
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      color: #10B981;
+      text-decoration: none;
+      margin-left: 0.25rem;
+      
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+// Right Side - Info Panel
+.info-side {
+  flex: 1;
+  position: relative;
+  background-image: url('https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1200');
+  background-size: cover;
+  background-position: center;
+  display: none;
+  
+  @media (min-width: 1024px) {
+    display: block;
+  }
+  
+  .info-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(16, 185, 129, 0.9);
+  }
+  
+  .info-content {
+    position: absolute;
+    inset: 0;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+    
+    h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 42px;
+      color: white;
+      line-height: 1.2;
+      margin-bottom: 2rem;
+    }
+    
+    .feature-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      
+      li {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1rem;
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        color: white;
+        
+        .bullet {
+          width: 24px;
+          height: 24px;
+          border-radius: 50%;
+          background: rgba(255,255,255,0.3);
+          position: relative;
+          
+          &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: white;
+          }
+        }
+      }
+    }
+  }
+}

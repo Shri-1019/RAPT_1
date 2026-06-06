@@ -1,0 +1,123 @@
+// ============================================
+// RAPT - Design System Variables
+// ============================================
+
+// --------------------------------------------
+// Colors - Primary Brand
+// --------------------------------------------
+$primary-gradient: linear-gradient(135deg, #FF4E50 0%, #FF8C00 100%);
+$primary-red: #FF4E50;
+$primary-orange: #FF8C00;
+$dark-charcoal: #2D3436;
+
+// --------------------------------------------
+// Colors - Text
+// --------------------------------------------
+$text-dark: #161d1f;
+$text-body: #5b403e;
+$text-light: #9ca3af;
+$text-white: #ffffff;
+
+// --------------------------------------------
+// Colors - Borders & Backgrounds
+// --------------------------------------------
+$border-light: #e2e9ec;
+$border-lighter: #dde4e6;
+$bg-light: #f4fafd;
+$bg-white: #ffffff;
+
+// --------------------------------------------
+// Colors - Status / Feedback
+// --------------------------------------------
+$success: #10B981;
+$warning: #F59E0B;
+$error: #EF4444;
+$info: #3B82F6;
+
+// --------------------------------------------
+// Typography - Font Families
+// --------------------------------------------
+$font-heading: 'Montserrat', sans-serif;
+$font-body: 'Inter', sans-serif;
+
+// --------------------------------------------
+// Typography - Font Sizes
+// --------------------------------------------
+$text-xs: 0.75rem;    // 12px
+$text-sm: 0.875rem;   // 14px
+$text-base: 1rem;     // 16px
+$text-lg: 1.125rem;   // 18px
+$text-xl: 1.25rem;    // 20px
+$text-2xl: 1.5rem;    // 24px
+$text-3xl: 1.875rem;  // 30px
+$text-4xl: 2.25rem;   // 36px
+$text-5xl: 3rem;      // 48px
+
+// --------------------------------------------
+// Spacing
+// --------------------------------------------
+$spacing-xs: 0.5rem;   // 8px
+$spacing-sm: 0.75rem;  // 12px
+$spacing-md: 1rem;     // 16px
+$spacing-lg: 1.5rem;   // 24px
+$spacing-xl: 2rem;     // 32px
+$spacing-2xl: 3rem;    // 48px
+$spacing-3xl: 4rem;    // 64px
+$spacing-4xl: 6rem;    // 96px
+
+// --------------------------------------------
+// Border Radius
+// --------------------------------------------
+$radius-sm: 0.5rem;    // 8px
+$radius-md: 0.75rem;   // 12px
+$radius-lg: 1rem;      // 16px
+$radius-xl: 1.5rem;    // 24px
+$radius-2xl: 2rem;     // 32px
+$radius-full: 9999px;
+
+// --------------------------------------------
+// Shadows
+// --------------------------------------------
+$shadow-sm: 0px 1px 2px rgba(0, 0, 0, 0.05);
+$shadow-md: 0px 4px 6px -1px rgba(0, 0, 0, 0.1);
+$shadow-lg: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+$shadow-xl: 0px 20px 25px -5px rgba(0, 0, 0, 0.1);
+$shadow-card: 0px 10px 40px -10px rgba(22, 29, 31, 0.06);
+$shadow-button: 0px 20px 25px -5px rgba(182, 21, 36, 0.2);
+
+// --------------------------------------------
+// Breakpoints / Media Queries
+// --------------------------------------------
+$breakpoint-sm: 640px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-xl: 1280px;
+$breakpoint-2xl: 1536px;
+
+// --------------------------------------------
+// Z-Index Layers
+// --------------------------------------------
+$z-dropdown: 1000;
+$z-sticky: 1020;
+$z-fixed: 1030;
+$z-modal-backdrop: 1040;
+$z-modal: 1050;
+$z-popover: 1060;
+$z-tooltip: 1070;
+$z-toast: 1080;
+
+// --------------------------------------------
+// Transitions
+// --------------------------------------------
+$transition-fast: 0.15s ease;
+$transition-normal: 0.2s ease;
+$transition-slow: 0.3s ease;
+
+// --------------------------------------------
+// Container Max Widths
+// --------------------------------------------
+$container-sm: 640px;
+$container-md: 768px;
+$container-lg: 1024px;
+$container-xl: 1280px;
+$container-2xl: 1536px;

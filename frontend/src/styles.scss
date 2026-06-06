@@ -1,1 +1,312 @@
-/* You can add global styles to this file, and also import other style files */
+// ============================================
+// RAPT - Global Styles
+// ============================================
+
+// Import design system variables
+@import './styles/variables';
+
+// --------------------------------------------
+// CSS Reset & Base Styles
+// --------------------------------------------
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-body;
+  font-size: $text-base;
+  line-height: 1.5;
+  color: $text-body;
+  background-color: $bg-light;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// --------------------------------------------
+// Typography
+// --------------------------------------------
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-heading;
+  font-weight: 700;
+  color: $text-dark;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: $text-5xl;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: $text-4xl;
+  letter-spacing: -0.02em;
+}
+
+h3 {
+  font-size: $text-2xl;
+}
+
+h4 {
+  font-size: $text-xl;
+}
+
+p {
+  margin-bottom: $spacing-md;
+}
+
+a {
+  color: $primary-red;
+  text-decoration: none;
+  transition: $transition-fast;
+  
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// --------------------------------------------
+// Buttons (Global overrides)
+// --------------------------------------------
+button {
+  cursor: pointer;
+  font-family: $font-body;
+  border: none;
+  background: none;
+}
+
+// --------------------------------------------
+// Form Elements (Global)
+// --------------------------------------------
+input,
+textarea,
+select {
+  font-family: $font-body;
+  font-size: $text-base;
+}
+
+// Remove number input spinners
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+// --------------------------------------------
+// Utility Classes
+// --------------------------------------------
+
+// Container
+.container {
+  max-width: $container-xl;
+  margin: 0 auto;
+  padding: 0 $spacing-lg;
+  
+  @media (min-width: $breakpoint-sm) {
+    padding: 0 $spacing-xl;
+  }
+  
+  @media (min-width: $breakpoint-lg) {
+    padding: 0 $spacing-2xl;
+  }
+}
+
+// Text Colors
+.text-dark { color: $text-dark; }
+.text-body { color: $text-body; }
+.text-light { color: $text-light; }
+.text-white { color: $text-white; }
+.text-primary { color: $primary-red; }
+.text-success { color: $success; }
+.text-warning { color: $warning; }
+.text-error { color: $error; }
+.text-info { color: $info; }
+
+// Background Colors
+.bg-white { background: $bg-white; }
+.bg-light { background: $bg-light; }
+.bg-primary { background: $primary-red; }
+.bg-success { background: $success; }
+.bg-warning { background: $warning; }
+.bg-error { background: $error; }
+.bg-info { background: $info; }
+.bg-gradient-primary { background: $primary-gradient; }
+
+// Spacing Utilities
+.m-0 { margin: 0; }
+.mt-1 { margin-top: $spacing-xs; }
+.mt-2 { margin-top: $spacing-sm; }
+.mt-3 { margin-top: $spacing-md; }
+.mt-4 { margin-top: $spacing-lg; }
+.mt-5 { margin-top: $spacing-xl; }
+.mt-6 { margin-top: $spacing-2xl; }
+
+.mb-1 { margin-bottom: $spacing-xs; }
+.mb-2 { margin-bottom: $spacing-sm; }
+.mb-3 { margin-bottom: $spacing-md; }
+.mb-4 { margin-bottom: $spacing-lg; }
+.mb-5 { margin-bottom: $spacing-xl; }
+.mb-6 { margin-bottom: $spacing-2xl; }
+
+.p-0 { padding: 0; }
+.p-1 { padding: $spacing-xs; }
+.p-2 { padding: $spacing-sm; }
+.p-3 { padding: $spacing-md; }
+.p-4 { padding: $spacing-lg; }
+.p-5 { padding: $spacing-xl; }
+.p-6 { padding: $spacing-2xl; }
+
+// Flex Utilities
+.d-flex { display: flex; }
+.flex-column { flex-direction: column; }
+.flex-row { flex-direction: row; }
+.flex-wrap { flex-wrap: wrap; }
+.justify-start { justify-content: flex-start; }
+.justify-center { justify-content: center; }
+.justify-end { justify-content: flex-end; }
+.justify-between { justify-content: space-between; }
+.align-start { align-items: flex-start; }
+.align-center { align-items: center; }
+.align-end { align-items: flex-end; }
+.gap-1 { gap: $spacing-xs; }
+.gap-2 { gap: $spacing-sm; }
+.gap-3 { gap: $spacing-md; }
+.gap-4 { gap: $spacing-lg; }
+.gap-5 { gap: $spacing-xl; }
+
+// Text Utilities
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.text-uppercase { text-transform: uppercase; }
+.text-capitalize { text-transform: capitalize; }
+.text-lowercase { text-transform: lowercase; }
+
+// Font Weights
+.font-light { font-weight: 300; }
+.font-normal { font-weight: 400; }
+.font-medium { font-weight: 500; }
+.font-semibold { font-weight: 600; }
+.font-bold { font-weight: 700; }
+.font-extrabold { font-weight: 800; }
+
+// Border Radius
+.radius-sm { border-radius: $radius-sm; }
+.radius-md { border-radius: $radius-md; }
+.radius-lg { border-radius: $radius-lg; }
+.radius-xl { border-radius: $radius-xl; }
+.radius-full { border-radius: $radius-full; }
+
+// Shadows
+.shadow-sm { box-shadow: $shadow-sm; }
+.shadow-md { box-shadow: $shadow-md; }
+.shadow-lg { box-shadow: $shadow-lg; }
+.shadow-xl { box-shadow: $shadow-xl; }
+.shadow-card { box-shadow: $shadow-card; }
+.shadow-button { box-shadow: $shadow-button; }
+
+// Width Utilities
+.w-100 { width: 100%; }
+.w-75 { width: 75%; }
+.w-50 { width: 50%; }
+.w-25 { width: 25%; }
+.h-100 { height: 100%; }
+.h-auto { height: auto; }
+
+// Position Utilities
+.relative { position: relative; }
+.absolute { position: absolute; }
+.fixed { position: fixed; }
+.sticky { position: sticky; }
+
+// --------------------------------------------
+// Responsive Utilities
+// --------------------------------------------
+
+// Hide on mobile
+.hide-mobile {
+  @media (max-width: $breakpoint-md) {
+    display: none !important;
+  }
+}
+
+// Hide on desktop
+.hide-desktop {
+  @media (min-width: $breakpoint-lg) {
+    display: none !important;
+  }
+}
+
+// --------------------------------------------
+// Animation Classes
+// --------------------------------------------
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn $transition-slow ease;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spin {
+  animation: spin 1s linear infinite;
+}
+
+// --------------------------------------------
+// Scrollbar Styling (Optional)
+// --------------------------------------------
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: $border-lighter;
+  border-radius: $radius-full;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $border-light;
+  border-radius: $radius-full;
+  
+  &:hover {
+    background: $text-light;
+  }
+}
+
+// --------------------------------------------
+// Selection Styling
+// --------------------------------------------
+::selection {
+  background: $primary-red;
+  color: $text-white;
+}
+
+::-moz-selection {
+  background: $primary-red;
+  color: $text-white;
+}
